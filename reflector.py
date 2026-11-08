@@ -1,0 +1,19 @@
+reflector = [
+    {'A': 'Y'}, {'Y': 'A'},
+    {'B': 'R'}, {'R': 'B'},
+    {'C': 'U'}, {'U': 'C'},
+    {'D': 'H'}, {'H': 'D'},
+    {'E': 'Q'}, {'Q': 'E'},
+    {'F': 'S'}, {'S': 'F'},
+    {'G': 'L'}, {'L': 'G'},
+    {'I': 'P'}, {'P': 'I'},
+    {'J': 'X'}, {'X': 'J'},
+    {'K': 'N'}, {'N': 'K'},
+    {'M': 'O'}, {'O': 'M'},
+    {'T': 'Z'}, {'Z': 'T'},
+    {'V': 'W'}, {'W': 'V'}
+]
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def ref(x : int):
+    pointer=reflector[x]
+    return alphabet.index(list(pointer.values())[0])
